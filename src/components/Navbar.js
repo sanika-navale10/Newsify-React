@@ -90,6 +90,13 @@ export class Navbar extends Component {
               <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
+              <button
+                type="button"
+                onClick={this.props.toggleDarkMode}
+                style={{ marginLeft: "1rem" }}
+              >
+                {this.props.darkMode ? "Light" : "Dark"}
+              </button>
             </form>
           </div>
         </nav>
